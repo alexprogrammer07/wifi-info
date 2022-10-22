@@ -12,6 +12,6 @@ for wifi in wifis:
     results = [line.split(':')[1][1:-1] for line in results if "Key Content" in line]  # Splits username and password
 
     try:
-        print(f'Name: {wifi}, Password: {results}')
+        print(f'Name: {wifi}, Password: {results}')     #the try block to recieve an exception
     except Exception as e:
-        print(f'Name: {wifi}, Password: {e}')
+        print(f'Name: {wifi}, Password: {e}')       #the except block to hande an exception
